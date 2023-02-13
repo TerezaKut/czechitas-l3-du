@@ -2,11 +2,12 @@
 
 let jmeno = prompt('Zadejte svoje jméno:');
 let prijmeni = prompt('Zadejte svoje příjmení:');
-let vek = Number(prompt('Zadejte svůj věk:'));
+let rok = Number(prompt('Zadejte rok svého narození:'));
 let barva = prompt('Zadejte oblíbenou barvu (anglicky):');
 
 let vystup = document.querySelector('.vystupProgramu');
 
+let vek = 2023 - rok;
 vystup.innerHTML = '<p>'+ jmeno + ' ' + prijmeni + ', věk: ' + vek + '</p>'
 
 vystup.style.color = barva;
